@@ -14,38 +14,21 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
+    const bars = document.querySelectorAll('.bar');
     
     menuToggle.addEventListener('click', function() {
         this.classList.toggle('active');
         navLinks.classList.toggle('active');
-        
-        // Toggle bars animation
-        const bars = this.querySelectorAll('.bar');
-        if (this.classList.contains('active')) {
-            bars[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-            bars[1].style.opacity = '0';
-            bars[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
-        } else {
-            bars.forEach(bar => {
-                bar.style.transform = '';
-                bar.style.opacity = '';
-            });
-        }
+        document.body.classList.toggle('no-scroll');
     });
 
-    // Close mobile menu when clicking a nav link
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', function() {
-            if (navLinks.classList.contains('active')) {
-                menuToggle.classList.remove('active');
-                navLinks.classList.remove('active');
-                const bars = menuToggle.querySelectorAll('.bar');
-                bars.forEach(bar => {
-                    bar.style.transform = '';
-                    bar.style.opacity = '';
-                });
-            }
-        });
+    // Close menu when clicking outside or on a link
+    document.addEventListener('click', function(e) {
+        if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+            menuToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+        }
     });
 
     // Navbar scroll effect
@@ -61,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Typewriter effect
     const typewriterText = document.querySelector('.typewriter-text');
-    const professions = ['Full Stack Developer', 'Web Designer', 'UI/UX Enthusiast', 'Problem Solver'];
+    const professions = ['Computer Science Student', 'Web Developer', 'Problem Solver', 'Tech Enthusiast'];
     let i = 0;
     let j = 0;
     let currentProfession = '';
@@ -70,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function typeWriter() {
         isEnd = false;
-        typewriterText.innerHTML = currentProfession.substring(0, j);
+        typewriterText.innerHTML = currentProfession.substring(0, j) + '<span class="blinking-cursor">|</span>';
         
         if (!isDeleting && j === currentProfession.length) {
             isEnd = true;
@@ -105,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
     particlesJS('particles-js', {
         "particles": {
             "number": {
-                "value": 80,
+                "value": 60,
                 "density": {
                     "enable": true,
                     "value_area": 800
@@ -119,51 +102,31 @@ document.addEventListener('DOMContentLoaded', function() {
                 "stroke": {
                     "width": 0,
                     "color": "#000000"
-                },
-                "polygon": {
-                    "nb_sides": 5
                 }
             },
             "opacity": {
-                "value": 0.5,
-                "random": false,
-                "anim": {
-                    "enable": false,
-                    "speed": 1,
-                    "opacity_min": 0.1,
-                    "sync": false
-                }
+                "value": 0.3,
+                "random": false
             },
             "size": {
                 "value": 3,
-                "random": true,
-                "anim": {
-                    "enable": false,
-                    "speed": 40,
-                    "size_min": 0.1,
-                    "sync": false
-                }
+                "random": true
             },
             "line_linked": {
                 "enable": true,
                 "distance": 150,
                 "color": "#6c63ff",
-                "opacity": 0.4,
+                "opacity": 0.2,
                 "width": 1
             },
             "move": {
                 "enable": true,
-                "speed": 2,
+                "speed": 1.5,
                 "direction": "none",
                 "random": false,
                 "straight": false,
                 "out_mode": "out",
-                "bounce": false,
-                "attract": {
-                    "enable": false,
-                    "rotateX": 600,
-                    "rotateY": 1200
-                }
+                "bounce": false
             }
         },
         "interactivity": {
@@ -183,25 +146,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 "grab": {
                     "distance": 140,
                     "line_linked": {
-                        "opacity": 1
+                        "opacity": 0.5
                     }
-                },
-                "bubble": {
-                    "distance": 400,
-                    "size": 40,
-                    "duration": 2,
-                    "opacity": 8,
-                    "speed": 3
-                },
-                "repulse": {
-                    "distance": 200,
-                    "duration": 0.4
                 },
                 "push": {
                     "particles_nb": 4
-                },
-                "remove": {
-                    "particles_nb": 2
                 }
             }
         },
@@ -228,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Animate sections when they come into view
     const animateOnScroll = function() {
-        const elements = document.querySelectorAll('.skills-preview, .achievement-banner, .testimonial-preview');
+        const elements = document.querySelectorAll('.skills-preview, .achievement-banner, .projects-preview');
         
         elements.forEach(element => {
             const elementPosition = element.getBoundingClientRect().top;

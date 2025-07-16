@@ -1,0 +1,83 @@
+/* Mobile-specific styles */
+@media only screen and (max-width: 768px) {
+    /* Adjust navbar */
+    .navbar {
+        padding: 1rem 5%;
+    }
+    
+    /* Center align hero content */
+    .hero-content {
+        text-align: center;
+        margin-top: 3rem;
+    }
+    
+    /* Stack buttons vertically */
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+    
+    /* Adjust personal info layout */
+    .personal-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Make project cards full width */
+    .project-card {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Hide floating nav on mobile */
+    .floating-nav {
+        display: none;
+    }
+    
+    /* Adjust achievement banner */
+    .achievement-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .achievement-content i {
+        margin-bottom: 1rem;
+    }
+    
+    /* Footer adjustments */
+    .social-links {
+        flex-wrap: wrap;
+    }
+    
+    .social-link {
+        margin: 0.5rem;
+    }
+    
+    /* Mobile menu animation */
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    /* Better mobile menu */
+    .nav-links {
+        padding-top: 5rem;
+    }
+    
+    .nav-link {
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+}
