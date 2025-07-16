@@ -1,14 +1,17 @@
 /* Base Styles */
 :root {
+    
     --primary-color: #6c63ff;
     --secondary-color: #ff6584;
     --dark-color: #1a1a24;
     --light-color: #f8f9fa;
     --accent-color: #42b883;
-    --text-color: #ffffff;
+    --text-color: #1a1a24;        /* Changed from white to dark */
     --text-light: #f8f9fa;
     --text-dark: #1a1a24;
+    --background-color: #ffffff;   /* Added light background */
     --transition: all 0.3s ease;
+
 }
 
 * {
