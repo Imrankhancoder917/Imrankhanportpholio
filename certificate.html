@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imran khan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf_viewer.min.css">
+    <link rel="stylesheet" href="certificate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="bg-elements">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        <div class="square square-1"></div>
+        <div class="square square-2"></div>
+        <div class="triangle triangle-1"></div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div id="particles-js"></div>
+
+    <!-- Cursor Effects -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header>
+        <nav>
+            <div class="logo" data-text="AZ">IK</div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-hover="Home">Home</a></li>
+                <li><a href="blog.html" data-hover="Blog">Blog</a></li>
+                <li><a href="project.html" data-hover="Projects">Projects</a></li>
+                <li><a href="skill.html" data-hover="Skills">Skills</a></li>
+                <li><a href="certificate.html" class="active" data-hover="Certificates"></a></li>
+            </ul>
+            <div class="burger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="certificates-section">
+            <div class="section-header">
+                <h1 class="page-title" data-aos="fade-down">My <span>Certifications</span></h1>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">A proof of my continuous learning journey and commitment to growing my skills.”
+
+or a slightly longer version:
+
+“These certificates showcase my continuous learning journey and my dedication to expanding my knowledge and skills in software development.”</p>
+            </div>
+            
+            <div class="certificates-grid">
+                <!-- Certificates will be loaded dynamically -->
+            </div>
+        </section>
+
+        <!-- PDF Viewer Modal -->
+        <div class="pdf-modal" id="pdfModal">
+            <div class="pdf-modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="pdf-viewer-container">
+                    <canvas id="pdf-canvas"></canvas>
+                    <div class="pdf-controls">
+                        <button id="prev-page"><i class="fas fa-chevron-left"></i> Prev</button>
+                        <span id="page-count">Page 1 of 1</span>
+                        <button id="next-page">Next <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Imran Khan</div>
+            <div class="footer-links">
+                <a href="https://github.com/imrankhancoder917"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/imran-khan-sam8700"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/imr6271/?__pwa=1#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.hackerrank.com/ik3370349/hackos"><i class="fas fa-hackerrank"></i></a>
+            </div>
+            <div class="footer-copyright">
+                &copy; <span id="current-year"></span> All Rights Reserved | Designed with <i class="fas fa-heart"></i> by Imran
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="certificate.js"></script>
+</body>
+</html>

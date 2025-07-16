@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Imran khan</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <header>
+        <nav>
+            <div class="logo">IK</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="certificate.html">Certificates</a></li>
+                
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-section">
+            <div class="blog-header">
+                <h1 class="page-title">My <span>Blog</span></h1>
+                <p class="page-subtitle">Sharing knowledge and experiences in software development</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search articles...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <div class="category-filter">
+                <button class="active">All</button>
+                <button>Java</button>
+                <button>Python</button>
+                <button>Web Dev</button>
+                <button>Algorithms</button>
+                <button>Career</button>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Java Stream API">
+                        <div class="category-tag">Java</div>
+                    </div>
+                    <div class="blog-content">
+                        <h2>Understanding Java Stream </h2>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> June 15, 2023</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                            <span><i class="far fa-comment"></i> 12 comments</span>
+                        </div>
+                        <p>Exploring the powerful Stream API in Java 8+ and how it revolutionizes collection processing with functional programming paradigms. Learn about map, filter, reduce operations and parallel stream processing.</p>
+                        <div class="author-info">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Author">
+                            <span>Alim Zuneda</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Pandas Deep Dive">
+                        <div class="category-tag">Python</div>
+                    </div>
+                    <div class="blog-content">
+                        <h2>Python for Data Analysis: Pandas Deep Dive</h2>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> May 28, 2023</span>
+                            <span><i class="far fa-clock"></i> 8 min read</span>
+                            <span><i class="far fa-comment"></i> 8 comments</span>
+                        </div>
+                        <p>A comprehensive guide to using Pandas for efficient data manipulation and analysis in Python. Covers DataFrame operations, time series analysis, and performance optimization techniques.</p>
+                        <div class="author-info">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Author">
+                            <span>Alim Zuneda</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="CSS Grid">
+                        <div class="category-tag">Web Dev</div>
+                    </div>
+                    <div class="blog-content">
+                        <h2>Responsive Design with CSS Grid</h2>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> April 10, 2023</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                            <span><i class="far fa-comment"></i> 15 comments</span>
+                        </div>
+                        <p>How to create flexible, responsive layouts using modern CSS Grid techniques without media query overload. Includes practical examples for common layout patterns.</p>
+                        <div class="author-info">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Author">
+                            <span>Alim Zuneda</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Spring Boot">
+                        <div class="category-tag">Java</div>
+                    </div>
+                    <div class="blog-content">
+                        <h2>Building RESTful APIs with Spring Boot</h2>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March 22, 2023</span>
+                            <span><i class="far fa-clock"></i> 10 min read</span>
+                            <span><i class="far fa-comment"></i> 20 comments</span>
+                        </div>
+                        <p>Step-by-step guide to creating robust, scalable REST APIs using Spring Boot framework in Java. Covers best practices for exception handling, validation, and security.</p>
+                        <div class="author-info">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Author">
+                            <span>Alim Zuneda</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Algorithms">
+                        <div class="category-tag">Algorithms</div>
+                    </div>
+                    <div class="blog-content">
+                        <h2>Mastering Binary Search Algorithms</h2>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> February 18, 2023</span>
+                            <span><i class="far fa-clock"></i> 7 min read</span>
+                            <span><i class="far fa-comment"></i> 5 comments</span>
+                        </div>
+                        <p>Deep dive into binary search variations and applications. Learn how to implement and optimize binary search for different problem scenarios in coding interviews.</p>
+                        <div class="author-info">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Author">
+                            <span>Alim Zuneda</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Career">
+                        <div class="category-tag">Career</div>
+                    </div>
+                    <div class="blog-content">
+                        <h2>Transitioning from Student to Developer</h2>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> January 5, 2023</span>
+                            <span><i class="far fa-clock"></i> 9 min read</span>
+                            <span><i class="far fa-comment"></i> 14 comments</span>
+                        </div>
+                        <p>Practical advice for computer science students preparing for their first developer role. Covers resume tips, portfolio building, and interview preparation strategies.</p>
+                        <div class="author-info">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Author">
+                            <span>Imran Khan</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="pagination">
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+        
+        <section class="newsletter-section">
+            <div class="newsletter-container">
+                <h2>Subscribe to My Newsletter</h2>
+                <p>Get the latest articles and tutorials delivered straight to your inbox</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Imran khan</h3>
+                <p>“I’m a student passionate about software development and sharing what I learn through writing. I enjoy exploring new ideas, building projects, and helping others by breaking down complex topics into simple, practical guides.”</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Me</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/imrankhancoder917"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/imran-khan-sam8700"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/imr6271/?__pwa=1#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.hackerrank.com/ik3370349/hackos"><i class="fab fa-hackerrank"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Imran khan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="blog.js"></script>
+</body>
+</html>
