@@ -191,64 +191,65 @@ document.addEventListener('DOMContentLoaded', function() {
   const certificates = [
     {
       id: 1,
-      title: "Full Stack Web Development",
-      issuer: "Coding Academy",
+      title: "Java Full Stack Certificate",
+      issuer: "Edu Skill Academy",
       issuerLogo: "https://via.placeholder.com/30",
-      date: "June 2023",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      pdfUrl: "certificates/fullstack-certificate.pdf",
+      date: "December 2024",
+      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      pdfUrl: "certificate/java full stack internship certificate.pdf",
       badge: "Professional"
     },
     {
       id: 2,
-      title: "Advanced JavaScript Concepts",
-      issuer: "JavaScript Institute",
+      title: "Oracle certificate",
+      issuer: "Oracle Academy",
       issuerLogo: "https://via.placeholder.com/30",
-      date: "March 2023",
-      image: "https://images.unsplash.com/photo-1579403124614-197f69d8187b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      pdfUrl: "certificates/javascript-certificate.pdf",
+      date: "December 2024",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      pdfUrl: "certificate/oracle.pdf",
       badge: "Advanced"
     },
     {
       id: 3,
-      title: "React Masterclass",
-      issuer: "React Training",
+      title: "Google Ai/Ml",
+      issuer: "Google Academy",
       issuerLogo: "https://via.placeholder.com/30",
-      date: "January 2023",
+      date: "June 2025",
       image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      pdfUrl: "certificates/react-certificate.pdf",
+      pdfUrl: "certificate/ai ml google.pdf",
       badge: "Expert"
     },
     {
       id: 4,
-      title: "Node.js Backend Development",
-      issuer: "Node University",
+      title: "Participant certificate ",
+      issuer: "Naukari.com",
       issuerLogo: "https://via.placeholder.com/30",
-      date: "November 2022",
+      date: "May  2025",
       image: "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      pdfUrl: "certificates/nodejs-certificate.pdf",
+      pdfUrl: "certificate/naukari.pdf",
       badge: "Professional"
     },
     {
       id: 5,
-      title: "UI/UX Design Principles",
-      issuer: "Design School",
+      title: "Python",
+      issuer: "Guvi",
       issuerLogo: "https://via.placeholder.com/30",
-      date: "September 2022",
-      image: "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      pdfUrl: "certificates/design-certificate.pdf",
+      date: "May  2024",
+      image: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      pdfUrl: "certificate/python.pdf",
       badge: "Fundamentals"
     },
     {
       id: 6,
       title: "Cloud Computing Fundamentals",
-      issuer: "Cloud Academy",
+      issuer: "AWS Academy",
       issuerLogo: "https://via.placeholder.com/30",
-      date: "July 2022",
+      date: "January to march 2025",
       image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       pdfUrl: "certificate/Cloud certificate.pdf",
       badge: "Fundamentals"
     }
+    
   ];
 
   // Render Certificates

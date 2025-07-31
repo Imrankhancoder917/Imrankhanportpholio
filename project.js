@@ -85,53 +85,51 @@ document.addEventListener('DOMContentLoaded', function() {
       description: "A full-featured online store with cart functionality, user authentication, and payment processing.",
       image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       demoUrl: "#",
-      codeUrl: "#",
-      fullDescription: "This e-commerce platform was built with React, Node.js, and MongoDB. It includes features like product search, filtering, user reviews, and an admin dashboard for managing products and orders. The payment system integrates with Stripe for secure transactions.",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe API"]
+      codeUrl: "https://github.com/Imrankhancoder917/Com.git",
+      fullDescription: "This e-commerce platform was built with HTML, CSS,js and mysql. It includes features like product search, filtering, and an admin dashboard for managing products and orders and user can add product in cart section.",
+      technologies: ["HTML", "CSS", "JS", "JAVA", "MYSQL"]
     },
     {
+      
       id: 2,
-      title: "Task Management App",
+      title: "Netflix Data Analyzer",
       category: "app",
-      description: "A productivity app for organizing tasks with drag-and-drop functionality and team collaboration.",
-      image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      demoUrl: "#",
-      codeUrl: "#",
-      fullDescription: "The Task Management App helps individuals and teams stay organized. Built with React Native for cross-platform compatibility, it features real-time updates, task categorization, deadline reminders, and progress tracking. The backend uses Firebase for authentication and data storage.",
-      technologies: ["React Native", "Firebase", "Redux", "JavaScript"]
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ03xLtWNOg3RqePdpdMIxSM869KqeHYbj6Tg&s",
+     description: "A Python-based tool for analyzing Netflix viewership trends using Jupyter Notebook.",
+     demoUrl: "#",
+     codeUrl: "https://github.com/Imrankhancoder917/pro.git",
+     fullDescription: "Netflix Data Analyzer is a Python project that processes and visualizes Netflix viewership data. Built to run in Jupyter Notebook, it leverages Pandas, Matplotlib, and Seaborn for data cleaning, analysis, and visualization. Users can explore top shows, popular genres, viewing trends, and generate insightful charts. This project showcases practical skills in data wrangling, EDA, and reporting.",
+     technologies: ["Python", "Pandas", "Matplotlib", "Seaborn", "Jupyter Notebook"]
+
+
+
     },
     {
-      id: 3,
-      title: "Sentiment Analysis Tool",
-      category: "data",
-      description: "Machine learning model that analyzes text sentiment with 85% accuracy on product reviews.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      demoUrl: "#",
-      codeUrl: "#",
-      fullDescription: "This NLP project uses Python's NLTK and scikit-learn libraries to classify text sentiment. Trained on a dataset of 50,000 product reviews, it can predict positive, negative, or neutral sentiment with 85% accuracy. The web interface was built with Flask.",
-      technologies: ["Python", "NLTK", "scikit-learn", "Flask", "Pandas"]
+      
+    id: 3,
+    title: "Carbon Footprint Monitor",
+    category: "web",
+    description: "A web application that tracks and visualizes personal or organizational carbon emissions.",
+    image: "https://images.unsplash.com/photo-1466629437334-b4f6603563c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1478&q=80",
+    demoUrl: "#",
+    codeUrl: "https://github.com/Imrankhancoder917/carbonfootprint.git",
+    fullDescription: "An interactive dashboard that calculates carbon footprint based on user inputs like transportation, energy usage, and consumption habits. Features data visualization of emission trends, sustainability tips, and comparison tools. Built with a Java backend and MySQL database for secure data storage.",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Java", "MySQL", "Chart.js"]
+
     },
+    
     {
-      id: 4,
-      title: "Weather Dashboard",
-      category: "web",
-      description: "Real-time weather information with 5-day forecast and interactive maps.",
-      image: "https://images.unsplash.com/photo-1561484930-974554019ade?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      demoUrl: "#",
-      codeUrl: "#",
-      fullDescription: "The Weather Dashboard provides current conditions and forecasts using data from the OpenWeather API. Features include location search, temperature unit conversion, and severe weather alerts. The responsive design works on all device sizes.",
-      technologies: ["JavaScript", "React", "OpenWeather API", "CSS3", "HTML5"]
-    },
-    {
-      id: 5,
-      title: "Fitness Tracker",
-      category: "app",
-      description: "Mobile app for tracking workouts, nutrition, and health metrics with data visualization.",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      demoUrl: "#",
-      codeUrl: "#",
-      fullDescription: "This fitness tracking app helps users monitor their exercise routines and nutritional intake. It includes features like workout logging, calorie tracking, progress charts, and integration with wearable devices. Built with Flutter for cross-platform compatibility.",
-      technologies: ["Flutter", "Dart", "Firebase", "Health API", "Google Fit"]
+      
+     id: 5,
+     title: "Temperature Converter",
+     category: "Semester project",
+     description: "A desktop GUI application to convert between Celsius, Fahrenheit, and Kelvin.",
+     image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+     demoUrl: "#",
+     codeUrl: "https://github.com/Imrankhancoder917/Temparature.git",
+     fullDescription: "A lightweight Python application with a Tkinter-based GUI for quick temperature conversions. Supports Celsius, Fahrenheit, and Kelvin units with real-time updates. Ideal for learning basic GUI development and unit conversion logic in Python.",
+     technologies: ["Python", "Tkinter", "Pillow (for icons)"]
+
     },
     {
       id: 6,
@@ -139,8 +137,8 @@ document.addEventListener('DOMContentLoaded', function() {
       category: "web",
       description: "Personal portfolio showcasing my skills, projects, and professional experience.",
       image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      demoUrl: "#",
-      codeUrl: "#",
+      demoUrl: "https://imran-khan-portfolio.netlify.app/",
+      codeUrl: "https://github.com/Imrankhancoder917/Imrankhanportpholio.git",
       fullDescription: "My personal portfolio website was designed to showcase my work and skills. It features a clean, modern design with smooth animations and responsive layout. The site is built with HTML5, CSS3, and JavaScript without any frameworks for optimal performance.",
       technologies: ["HTML5", "CSS3", "JavaScript", "GSAP", "Responsive Design"]
     }
